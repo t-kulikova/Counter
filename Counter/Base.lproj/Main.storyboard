@@ -42,7 +42,6 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="plus.circle" catalog="system" title="Добавить" imagePadding="10"/>
                                         <connections>
-                                            <action selector="decrementCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g1n-j3-L8h"/>
                                             <action selector="incrementCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJh-yA-LVH"/>
                                         </connections>
                                     </button>
@@ -51,6 +50,9 @@
                                         <color key="tintColor" systemColor="systemBlueColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" image="minus.circle" catalog="system" title="Убавить" imagePadding="10"/>
+                                        <connections>
+                                            <action selector="decrementCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wX-dH-jhZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

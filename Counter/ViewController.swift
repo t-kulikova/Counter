@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet private weak var counterLabel: UILabel!
     @IBOutlet private weak var historyChangesTextView: UITextView!
     
+    // MARK: - Properties
+    
+    private var counter = 0
+    
     // MARK: - UIViewController Lifecycle
     
     override func viewDidLoad() {
@@ -23,15 +27,20 @@ class ViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction private func resetCounter(_ sender: Any) {
-        // TODO: - Implement recetCounter
+        guard counter > 0 else { return }
+        counter = 0
+        counterLabel.text = "\(counter)"
     }
     
     @IBAction private func incrementCounter(_ sender: Any) {
-        // TODO: - Implement incrementCounter
+        counter += 1
+        counterLabel.text = "\(counter)"
     }
     
     @IBAction private func decrementCounter(_ sender: Any) {
-        // TODO: - Implement decrementCounter
+        guard counter > 0 else { return }
+        counter -= 1
+        counterLabel.text = "\(counter)"
     }
     
 }
