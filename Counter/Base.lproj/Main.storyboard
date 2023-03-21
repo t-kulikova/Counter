@@ -41,6 +41,10 @@
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="plus.circle" catalog="system" title="Добавить" imagePadding="10"/>
+                                        <connections>
+                                            <action selector="decrementCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g1n-j3-L8h"/>
+                                            <action selector="incrementCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJh-yA-LVH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMR-lJ-Kck">
                                         <rect key="frame" x="170.66666666666663" y="0.0" width="158.33333333333337" height="48"/>
@@ -61,6 +65,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.counterclockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="resetCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wsv-yX-5WI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -80,6 +87,10 @@
                             <constraint firstItem="e3M-5d-v6R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="vNz-r0-h3y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="mLb-xP-vi9" id="TED-f6-fFg"/>
+                        <outlet property="historyChangesTextView" destination="aub-SR-zkF" id="6nq-BH-VYd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
